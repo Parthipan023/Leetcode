@@ -1,0 +1,12 @@
+int removeDuplicates(int* nums, int numsSize){
+    int n=numsSize;
+    int count=1;
+    for(int i=1;i<n;i++)
+    {
+        if(nums[i-1]!=nums[i])
+        {
+            nums[count++]=nums[i];
+        }
+    }
+    return count;
+}
